@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!-- saved from url=(0032)http://127.0.0.1:5500/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="./123_files/style.css"></head>
+
+
+<body cz-shortcut-listen="true">
+    <nav class="navbar">
+        <div class="logo">
+            <img src="./123_files/loggo.png" alt="">
+        </div>
+        <ul>
+
+            <li><a href="http://127.0.0.1:5500/index.html#">Home</a></li>
+            <li><a href="http://127.0.0.1:5500/index.html#">About</a></li>
+            <li><a href="http://127.0.0.1:5500/index.html#">Food Order</a></li>
+            <li><a href="http://127.0.0.1:5500/index.html#">Contact</a></li>
+        </ul>
+    </nav>
+    <section class="container">
+        <h1>My online service </h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+            Molestias similique officia ipsum hic,<br> debitis placeat
+            consectetur. Quia ipsa
+            officia aliquid. Tempora neque omnis qui!</p>
+        <button class="btn">
+            Click now
+        </button>
+    </section>
+    <section class="home">
+        <h1> Our Services</h1>
+        <div class="amit">
+            <div class="box">
+                <img src="./123_files/pizza.jpg" alt="">
+                <h2>Hurry Up</h2>
+                <p>Lorem ipsum dolor sit, amet  consectetur adipisicing elit.
+                    
+                    .</p>
+            </div>
+            <div class="amit">
+                <div class="box">
+                    <img src="./123_files/logo.png" alt="">
+                    <h2>Free Order</h2>
+                    <p>Lorem ipsum dolor sit, amet  consectetur adipisicing elit.
+                        
+                        .</p>
+                </div>
+                <div class="amit">
+                    <div class="box">
+                        <img src="./123_files/scooter.jpg" alt="">
+                        <h2>Order Now</h2>
+                        <p>Lorem ipsum dolor sit, amet  consectetur adipisicing elit.
+                            
+                            .</p>
+                    </div>
+                </div>
+
+            </div></div></section>
+
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
